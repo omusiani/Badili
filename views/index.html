@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Badili App
+  </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+  </head>
+  <body on load = "convertPesa()">
+    <div class="container text-center">
+      <h2>Pesa Convert</h2>
+      <div class="Jumbotron text-center">
+        <h3>Convert Any Currency</h3>
+        <form id='InputForm'>
+          <div class="form-group">
+            <label  form="amountInput">Which Amount?</label>
+            <input type="text" class="form-control" id="amountInput" placeholder="1" name="">
+          </div>
+          <div class="form-group">
+            <label form="fromCurrencyInput">From This Currency:</label>
+            <select id="fromCurrencyInput" maxlength="10" class="form-control">
+              <option value="fromCurrencyInput"><!--Enter here to get value from json stored --></option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label id="toCurrencyInput">To This Currency:</label>
+            <select id="toCurrencyInput"maxlength="10" class="form-control">
+              <option value="toCurrencyInput"><!--Code to get from js here --></option>
+            </select>
+
+          </div>
+          <div class="form-group">
+            <button type="submitt" class="btn btn-primary">Convert Currency</button>
+
+            <output></output>
+          </div>
+        </form>
+        <div class="footer">
+          <p><a href="https://github.com/omusiani">Omusiani</a>&copy 2018 </p>
+        </div>
+      </div>
+    </div>
+    <script src="http://chancejs.com/chance.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="./../main.js"></script>
+  </body>
+</html>
